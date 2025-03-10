@@ -9,6 +9,19 @@ max :: (Ord a) => a -> (a -> a)
 
 multThree :: (Num a) => a -> a -> a -> a  
 multThree x y z = x * y * z
+friendFoe y = "FRIEND OR FOE?"
+multFour x y z w = x * y * z * w
+efe h = 2^h
+efo h = 3^h
+efa h = 5^h
+efu h = 7^h
+efi h = 11^h
+-- Output function, binding part, predicate
+
+jitter xs = [if 12 > x then "omegA" else "Alpha" | x <- xs, odd x]
+megaNeko xs = [if x < 42 then "BeforeGod" else "HigherSDim" | x <- xs, odd x]
+boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x]
+
 :t "a"
 :t True
 :t False
@@ -21,7 +34,7 @@ removeNonUppercase st = [c | c <- st, c `elem` ['A'..'Z']]
 [x*5| x <- [11..24]]
 [x*7 | x <- [24..30]]
 
-
+-- Touples
 
 # https://www.freecodecamp.org/news/just-in-time-compilation-explained/
 
