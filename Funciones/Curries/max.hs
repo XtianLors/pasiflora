@@ -34,7 +34,8 @@ removeNonUppercase st = [c | c <- st, c `elem` ['A'..'Z']]
 [x*5| x <- [11..24]]
 [x*7 | x <- [24..30]]
 
--- Touples
+-- Tuples 
+
 
 # https://www.freecodecamp.org/news/just-in-time-compilation-explained/
 
