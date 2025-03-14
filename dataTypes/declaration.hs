@@ -13,6 +13,11 @@ c1, c2, c3 :: Char
 c1 = 'x'
 c2 = 'Ø'
 c3 = 'ダ'
+c4 = '𝄾'
+c5 = '𝅅'
+c6 = '𝅂'
+c7 = '𝅁'
+c8 = '𝄽'
 
 -- Strings are lists of characters with special syntax
 s :: String
@@ -46,13 +51,15 @@ d = [(1, 4), (3, 2), (5, 2), (6, 7), (8, 2)]
 (8, 10) : d
 d ++ [(8, 6)]
 
+intListLength (x:xs) = 1 + intListLength xs
 
+varRef = [(1, "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics")]
 
+varRef1 = (2, "https://treasurydirect.gov/marketable-securities/understanding-pricing/") : varRef
 
+varRef3 = () : varRef1
 
-
-
-
-
-
-
+term1 = "Par yield curve"
+term2 = "Security"
+term3 = "Over-The-Counter Market"
+conclus1 = "based on the closing market bid prices on the most recently auctioned"
